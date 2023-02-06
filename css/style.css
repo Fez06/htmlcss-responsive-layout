@@ -16,7 +16,7 @@ body {
     --first-color-light: #b5ddff;
     --secondary-color: #9792e4;
 }
-.nav, main {
+.nav, main, .planning, .pro-container {
     display: flex;
 }
 
@@ -81,9 +81,14 @@ ul {
 
 }
 /* -----MAIN-----  */
-main {
+/* ----sezione pro -----  */
+.pro-container {
     gap: 20px 0;
     padding: 25px;
+    flex-direction: column;
+}
+
+main {
     flex-direction: column;
 }
 
@@ -158,7 +163,7 @@ section {
 }
 /* ----RESPONDIVE main TABLET 768-----  */
 @media screen and (min-width: 768px) {
-    main {
+    .pro-container {
         max-width: 768px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -181,7 +186,7 @@ section {
 }
 /* ----RESPONDIVE main DESKTOP 992-----  */
 @media screen and (min-width: 992px) {
-    main {
+    .pro-container {
         max-width: 100vw;
     }
 
@@ -195,5 +200,96 @@ section {
     }
 
 }
+
+/* ----- sezione strategic planning ----  */
+.planning {
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+}
+
+.planning img {
+    max-width: 100%;
+}
+
+.planning-uno img {
+    padding-top: 30px;
+}
+
+.planning h1{
+    padding-top: 30px;
+}
+
+.planning-uno {
+    color: white;
+}
+
+.planning-uno:not(img) {
+    text-align: left;
+}
+
+.planning-uno h1 {
+    padding-bottom: 30px;
+}
+
+.planning-uno p {
+    padding-bottom: 15px;
+}
+
+.planning-due {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.planning-due h2 {
+    padding-bottom: 20px;
+}
+
+.planning-due p {
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+.planning-due i {
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+/* ----RESPONDIVE main TABLET 768-----  */
+/* ----RESPONDIVE main DESKTOP 992-----  */
+@media screen and (min-width: 992px) {
+    .planning {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .planning-uno {
+       max-width: 50%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+    }
+
+    .planning-uno img {
+        max-width: 70%;
+    }
+
+    .planning-due {
+        max-width: 35%;
+        height: 80%;
+        align-self: end;
+    }
+
+    .planning-due img {
+        max-width: 60%;
+    }
+}
+
+/* ----- sezione testimonials ----  */
+
 
 /* -----FOOTER-----  */
