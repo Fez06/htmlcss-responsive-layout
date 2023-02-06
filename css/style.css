@@ -40,6 +40,11 @@ ul {
     display: none;
 }
 
+.nav ul a {
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: white;
+}
 /* ----RESPONDIVE HEADER TABLET-----  */
 @media screen and (max-width: 768px) {
     body {
@@ -52,15 +57,78 @@ ul {
         max-width: 992px;
     }
 }
+
 @media screen and (min-width: 992px) {
+    body {
+        max-width: 100vw;
+    }
+
+    .nav {
+        justify-content: space-between;
+        position: relative;
+    }
 
     .nav i {
         display: none;
     }
+
     .nav ul {
         display: flex;
+        gap: 1.25rem;
+        position: absolute;
+        right: 25px;
     }
+
 }
 /* -----MAIN-----  */
+
+article {
+    background-color: var(--first-color-light);
+    padding: 30px 20px 0;
+}
+
+section {
+    line-height: 30px;
+}
+
+.pro p {
+    padding-bottom: 30px;
+}
+.pro img {
+    padding-top: 30px;
+}
+
+.pro a {
+    padding: 10px 90px;
+    border-radius: 30px;
+    background-color: var(--first-color);
+    color: white;
+    align-self: center;
+}
+
+.fa-apple {
+    padding-right: 5px;
+}
+
+.double article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-double {
+    max-height: 50%;
+} 
+
+.img-double img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/* ----RESPONDIVE main TABLET-----  */
+/* ----RESPONDIVE main DESKTOP-----  */
+
 
 /* -----FOOTER-----  */
