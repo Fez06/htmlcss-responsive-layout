@@ -1,0 +1,66 @@
+/* -----RESET-----  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 375px;
+    margin: auto;
+}
+/* -----COMMON-----  */
+
+:root {
+    --first-color: #0084fd;
+    --first-color-light: #b5ddff;
+    --secondary-color: #9792e4;
+}
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+/* -----HEADER-----  */
+.nav {
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--first-color);
+    color: white;
+}
+
+.nav ul {
+    display: none;
+}
+
+/* ----RESPONDIVE HEADER TABLET-----  */
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+}
+/* ----RESPONDIVE HEADER DESKTOP-----  */
+@media screen and (max-width: 992px) {
+    body {
+        max-width: 992px;
+    }
+}
+@media screen and (min-width: 992px) {
+
+    .nav i {
+        display: none;
+    }
+    .nav ul {
+        display: flex;
+    }
+}
+/* -----MAIN-----  */
+
+/* -----FOOTER-----  */
