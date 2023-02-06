@@ -291,5 +291,41 @@ section {
 
 /* ----- sezione testimonials ----  */
 
+.testimonials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
 
+.testimonials > h3, h1 {
+    padding-top: 30px;
+}
+
+.testimonials > h1 {
+    color: var(--secondary-color);
+}
+
+.testimonials > p {
+    padding: 30px 0;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.photo {
+    max-height: 30%;
+    
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 100%;
+}
 /* -----FOOTER-----  */
